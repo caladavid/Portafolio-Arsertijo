@@ -52,3 +52,12 @@ lightboxBg.addEventListener('click', () => {
     lightboxBg.classList.remove('active');
     body.classList.remove('disabledScroll'); 
 })
+
+// Desactiva el click derecho en las imagenes
+
+let allImages = document.querySelectorAll("img");
+allImages.forEach((value)=>{
+    value.oncontextmenu = e => {
+        e.preventDefault();
+    }
+})

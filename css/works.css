@@ -63,6 +63,7 @@ img{
 
 #lightboxBg.active img{
     width: 50%;
+    pointer-events: none;
 }
 
 @media (max-width:768px) {

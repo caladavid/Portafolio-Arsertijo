@@ -37,10 +37,7 @@ a, li{
 
 img{
     width: 100%;
-    cursor: pointer;
-/*     width: 800px;
-    height: 300px; */
-    
+    cursor: pointer;   
 }
 
 #lightboxBg{
@@ -51,7 +48,7 @@ img{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8); /* Fallback color */
+    background-color: rgba(0,0,0,0.8);
     backdrop-filter: blur(2px);
     overflow: auto;
 } 
@@ -71,12 +68,6 @@ img{
         width: 80%;
     }
 }
-
-/* #lightboxBg.active .imgH{
-    height: 800px;
-    height: 300px;
-} */
-
 
 #lightboxBg{
     margin: auto;
@@ -175,13 +166,10 @@ header .nav .nav-list .wrapper{
     justify-content: center;
     top: 0;
     left: 0;
-/*     right: 8rem; */
-/*     left: -100%; */
     height: 100vh;
     width: 100%;
     background: var(--color-secondary);
     text-align: center; 
-/*     clip-path: circle(25px at calc(100% - 45px) 45px); */
     clip-path: circle(0 at 97.2% 4.5rem);
     z-index: 100;
     transition: all 0.3s ease;
@@ -255,10 +243,6 @@ header .nav .nav-list .wrapper li p{
         font-size: 1.11rem;
     }
 
-/*     header .nav .nav-list.sticky{
-        padding: 2rem;
-    } */
-
     header .nav .nav-list .wrapper .icon.cancel-btn{
         right: 3rem;
         top: 3rem;
@@ -276,12 +260,18 @@ header .nav .nav-list .wrapper li p{
         font-size: 3em;
     }
 }
+
+@media (max-width:768px) {
+    header .nav .nav-list{
+        padding: 2rem;
+    }
+}
+
 @media (max-width:600px) {
     .icon{
         display: block;
     }
 }
-
 
 @media (max-width: 450px) {
     header .nav .nav-list .wrapper li a,
@@ -300,7 +290,6 @@ header .nav .nav-list .wrapper li p{
 
 .container{
     width: 100%;
-/*     height: 15vw; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,7 +297,6 @@ header .nav .nav-list .wrapper li p{
     background: var(--color-primary);
     color: var(--color-secondary);
     padding: 6rem 0;
-/*     transition: .3s ease all; */
 }
 
 .container h1{
@@ -332,7 +320,6 @@ header .nav .nav-list .wrapper li p{
     height: 100%;
     justify-content: center;
     width: 100%;
-/*     margin-top: 2rem; */
     align-items: center;
 }
 
@@ -343,7 +330,6 @@ header .nav .nav-list .wrapper li p{
     justify-content: center;
     gap: 40px;
     width: 80%;
-/*     padding-top: 3rem; */
 }
 
 .container .sub-container p{
@@ -411,7 +397,6 @@ header .nav .nav-list .wrapper li p{
 
 .container .sub-container .next i{
     position: absolute;
-/*     top: 28%; */
     right: 0;
     margin-right: 25px;
     transform: translateX(-50%);
@@ -521,9 +506,7 @@ header .nav .nav-list .wrapper li p{
 .gallery .img-div:hover img{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     opacity: 0.8;
-/*     width: 98%; */
     transform: scale(0.95);
-/*     align-self: center; */
     transition: all 0.2s ease;
     
 }
@@ -556,7 +539,6 @@ header .nav .nav-list .wrapper li p{
     width: 100%;
     height: initial;
     margin: 0 auto;
-/*     padding: 1em 0; */
 }
 
 .contact .contact-left{
@@ -583,7 +565,6 @@ header .nav .nav-list .wrapper li p{
 .contact .contact-left input[type=text],
 .contact .contact-left input[type=email]{
     width: 100%;
-/*     max-width: 80%; */
     margin: 1em auto;
     padding: 2em 0;
     border: none;

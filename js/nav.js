@@ -1,11 +1,8 @@
 (function () {
-    
     const body = document.querySelector('body');
     const navbar = document.querySelector('.nav-list');
     const navItems = document.querySelectorAll('.nav-item');
-    const logo = document.querySelector('.logo');
     const logoLink = document.querySelector('.logo a');
-    const scrollDiv = document.querySelector('.scroll-left');
     const containerDiv = document.querySelector('.container');
     const menu = document.querySelector('.wrapper');
     const menuBtn = document.querySelector('.menu-btn');
@@ -16,14 +13,8 @@
     
         // Al clickear en el botón del menu, se abre
         menu.classList.add('active');
-    /*     menu.classList.toggle('active') */
         menuBtn.classList.add('hide');
         body.classList.add('disabledScroll'); 
-    /*     setTimeout(() => {
-          body.classList.add('disabledScroll');     
-        }, 200); */
-    
-    
       });
     
       cancelBtn.addEventListener('click', () => {
@@ -67,4 +58,11 @@
         } 
       })
 
+      // Desactiva el click derecho en las imagenes
+  let allImages = document.querySelectorAll("img");
+  allImages.forEach((value)=>{
+      value.oncontextmenu = e => {
+          e.preventDefault();
+      }
+  });
 })();

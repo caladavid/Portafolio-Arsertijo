@@ -46,12 +46,12 @@ images.forEach(img => {
 
 
     })
-})
+});
 
 lightboxBg.addEventListener('click', () => {
     lightboxBg.classList.remove('active');
     body.classList.remove('disabledScroll'); 
-})
+});
 
 // Desactiva el click derecho en las imagenes
 
@@ -60,4 +60,4 @@ allImages.forEach((value)=>{
     value.oncontextmenu = e => {
         e.preventDefault();
     }
-})
+});

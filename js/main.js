@@ -142,3 +142,15 @@ document.addEventListener('DOMContentLoaded', () =>{
     cursor.classList.add('unaactive-touch');
   });
 });
+
+// Desactiva el click derecho en las imagenes
+let allImages = document.querySelectorAll("img");
+allImages.forEach((value)=>{
+    value.oncontextmenu = e => {
+        e.preventDefault();
+    }
+});
+
+
+
+

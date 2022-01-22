@@ -1,6 +1,10 @@
 :root{
-    --color-primary:#f04e37;
-    --color-secondary:#fff5e6;
+    --color-primary:#101014;
+    /* --color-primary:#f04e37; */
+    --color-secondary:#ebfcff;
+    --hover-wrapper:#f04e37;
+/*     --color-secondary:#fff5e6; */
+    --hover--color:#76eaff;
     --black--color:hsl(236, 100%, 3%);
     --black--color:rgb(0, 1, 15);
 
@@ -130,12 +134,12 @@ a, li{
 }
 
 .intro .left-side .scroll-left .scroll:hover{
-    color: #f04e37;
+    color: var(--hover-wrapper);
 }
 
 .intro .left-side .scroll-left .scroll:hover::after{
-    color: #f04e37;
-    background:  #f04e37; 
+    color: var(--hover-wrapper);
+    background: var(--hover-wrapper); 
 }
 
 
@@ -278,7 +282,7 @@ a, li{
 }
 
 .intro .right-side header .nav .nav-list .wrapper li a:hover{
-    color: #f04e37;
+    color: var(--hover-wrapper);
 }
 
 .intro .right-side header .nav .nav-list .nav-item a{
@@ -288,11 +292,11 @@ a, li{
 }
 
 .intro .right-side header .nav-list .nav-item a:hover{
-    color: #dbd3c7;
+    color: var(--hover--color);
 }
 
 .intro .right-side header .nav .nav-list .wrapper li p{
-    color: var(--color-primary);
+    color: var(--hover-wrapper);
     font-size: 4em;
     font-family: var(--ff-normal);
     transition: .2s ease all;
@@ -776,7 +780,7 @@ a, li{
 
 .my-works .works .w-text.wt p,
 .my-works .works .w-text.wt hr{
-    color: var(--black--color);
+    color: var(--color-primary);
 
 }
 
@@ -1120,7 +1124,7 @@ footer .link a{
 
 
 footer .link a:hover{
-    color: #dbd3c7;
+    color: var(--hover--color);
 }
 
 footer .link .f-link{

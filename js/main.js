@@ -98,7 +98,7 @@ const mediaQuery = window.matchMedia('(max-width: 600px)');
       logoLink.style.color = '#231f20';
 
       if(mediaQuery.matches) { 
-        logoLink.style.color = '#fff5e6';
+        logoLink.style.color = '#ebfcff';
         menuBtn.style.display = 'block';
       }
 
@@ -110,10 +110,10 @@ const mediaQuery = window.matchMedia('(max-width: 600px)');
 
       containerDiv.classList.add('fix');
       menuBtn.style.display = 'block';
-      logoLink.style.color = '#fff5e6';
+      logoLink.style.color = '#ebfcff';
 
       if(mediaQuery.matches) { 
-        logoLink.style.color = '#fff5e6';
+        logoLink.style.color = '#ebfcff';
       }
     } 
   })

@@ -2,6 +2,7 @@
 const body = document.querySelector('body');
 const oculted = document.querySelector('.oculted');
 const sd = document.querySelector('.sd');
+const redZend = document.querySelector('.redZen');
 
 const lightboxBg = document.createElement('div');
 lightboxBg.id = 'lightboxBg';
@@ -42,6 +43,32 @@ images.forEach(img => {
                 img.src = image;
                 lightboxBg.appendChild(img);
             })
+        }  
+
+        if(img === redZend) {
+            arrayImg = [
+                'works/RediseñoWeb/ZenGaku/1.png',
+                'works/RediseñoWeb/ZenGaku/2.png',
+                'works/RediseñoWeb/ZenGaku/3.png',
+                'works/RediseñoWeb/ZenGaku/4.png',
+                'works/RediseñoWeb/ZenGaku/4.1.png',
+                'works/RediseñoWeb/ZenGaku/5.png',
+                'works/RediseñoWeb/ZenGaku/6.png',
+                'works/RediseñoWeb/ZenGaku/7.png',
+                'works/RediseñoWeb/ZenGaku/8.png',
+                'works/RediseñoWeb/ZenGaku/9.png',
+                'works/RediseñoWeb/ZenGaku/10.png',
+                'works/RediseñoWeb/ZenGaku/11.png',
+                'works/RediseñoWeb/ZenGaku/12.png',
+                'works/RediseñoWeb/ZenGaku/13.png'
+]
+
+            arrayImg.forEach( image => {
+                const img = document.createElement('img');
+                img.src = image;
+                lightboxBg.appendChild(img);
+            })
+            
         }
 
 

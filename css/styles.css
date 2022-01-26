@@ -52,7 +52,7 @@ a, li{
     border-radius: 50%;
     transform: translate(-50%, -50%);
 /*     border: 1px solid white; */
-    background: var(--black--color);
+    background: var(--hover--color);
     z-index: 99;
     pointer-events: none;
     transition: width 0.5s, height 0.5s ease-out;

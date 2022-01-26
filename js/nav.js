@@ -65,4 +65,11 @@
           e.preventDefault();
       }
   });
+
+  // Fecha actualizada en el footer
+  document.addEventListener('DOMContentLoaded', () =>{
+    const year = document.querySelector("#year")
+    const currentYear = new Date().getFullYear();
+    year.textContent = currentYear;
+  });
 })();

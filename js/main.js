@@ -141,6 +141,11 @@ document.addEventListener('DOMContentLoaded', () =>{
     cursor.classList.remove('active-touch');
     cursor.classList.add('unaactive-touch');
   });
+
+   // Fecha actualizada en el footer
+  const year = document.querySelector("#year")
+  const currentYear = new Date().getFullYear();
+  year.textContent = currentYear;
 });
 
 // Desactiva el click derecho en las imagenes
@@ -149,7 +154,10 @@ allImages.forEach((value)=>{
     value.oncontextmenu = e => {
         e.preventDefault();
     }
+
 });
+
+
 
 
 

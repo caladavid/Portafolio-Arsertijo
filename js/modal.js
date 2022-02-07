@@ -3,6 +3,7 @@ const body = document.querySelector('body');
 const oculted = document.querySelector('.oculted');
 const sd = document.querySelector('.sd');
 const redZend = document.querySelector('.redZen');
+const presentZG = document.querySelector('.presentZG');
 
 const lightboxBg = document.createElement('div');
 lightboxBg.id = 'lightboxBg';
@@ -71,6 +72,23 @@ images.forEach(img => {
             
         }
 
+        if(img === presentZG) {
+            arrayImg = [
+                'works/RediseñoWeb/Zengaku Presentation/Presentation_02.png',
+                'works/RediseñoWeb/Zengaku Presentation/Presentation_03.png',
+                'works/RediseñoWeb/Zengaku Presentation/Presentation_04.png',
+                'works/RediseñoWeb/Zengaku Presentation/Presentation_05.png',
+                'works/RediseñoWeb/Zengaku Presentation/Presentation_06.png'
+
+]
+
+            arrayImg.forEach( image => {
+                const img = document.createElement('img');
+                img.src = image;
+                lightboxBg.appendChild(img);
+            })
+            
+        }
 
     })
 });

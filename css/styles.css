@@ -291,6 +291,39 @@ a, li{
     font-family: var(--ff-normal);
 }
 
+.intro .right-side header .nav .nav-list .nav-item a > div{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.intro .right-side header .nav .nav-list .nav-item a > div:nth-child(1) span{
+    will-change: transform ;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    transition-delay: calc(0.05s * var(--index));
+    transform-origin: bottom;
+    display: inline-block;
+}
+
+.intro .right-side header .nav .nav-list .nav-item a > div:nth-child(2) span{
+    will-change: transform ;
+    transform-style: preserve-3d;
+    transition: .5s;
+    transition-delay: calc(0.05s * var(--index));
+    transform-origin: top;
+    display: inline-block;
+    transform: translate3d(0, -100%, 0) rotateX(-90deg);
+}
+
+.intro .right-side header .nav .nav-list .nav-item a:hover > div:nth-child(1) span{
+    transform: translate3d(0, 100%, 0) rotateX(-90deg);
+}
+
+.intro .right-side header .nav .nav-list .nav-item a:hover > div:nth-child(2) span{
+    transform: translate3d(0, 0%, 0) rotateX(0deg);
+}
+
 .intro .right-side header .nav-list .nav-item a:hover{
     color: var(--hover--color);
 }
@@ -344,52 +377,12 @@ a, li{
 .intro .right-side .container h2 .t2,
 .intro .right-side .container h2 .t22{
     display: block;
-    height: max-content;
-    overflow: hidden;
 }
 
-.intro .right-side .container h2 .t2 span{
+.intro .right-side .container h2 .t2 > span,
+.intro .right-side .container h2 .t22 > span{
     display: inline-block;
-    animation: spin 1s 1s; 
 }
-
-.intro .right-side .container h2 .t22 span{
-    display: inline-block;
-    animation: spin 1s 1s; 
-}
-
-.intro .right-side .container h2 .t2 span:nth-child(1){
-	animation-delay: .1s;  
-}
-
-.intro .right-side .container h2 .t2 span:nth-child(2){
-	animation-delay: .2s;  
-}
-
-.intro .right-side .container h2 .t2 span:nth-child(3){
-	animation-delay: .3s;  
-}
-
-.intro .right-side .container h2 .t22 span:nth-child(1){
-	animation-delay: .4s;  
-}
-
-.intro .right-side .container h2 .t22 span:nth-child(2){
-	animation-delay: .5s;  
-}
-
-@keyframes spin{
-    0% {
-        opacity: 0;
-      transform: translateY(100%);
-      animation-timing-function: ease-out;
-    }
-    50% {
-        opacity: 1;
-      transform: translateY(0);
-      animation-timing-function: ease-in;
-    }
-  }
 
 .intro .right-side .container .t3{
     grid-column: 4;

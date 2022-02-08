@@ -2,54 +2,96 @@
 
 window.sr = ScrollReveal();
 
-sr.reveal('.nav-item', {
-  delay: 500,
+sr.reveal('.nav-1', {
+  delay: 300,
   origin: 'bottom',
   distance: '-20px'
 });
 
-  sr.reveal('.t1', {
-    delay: 100,
-    origin: 'bottom',
-    distance: '-20px'
-  });
-   
-  sr.reveal('.scroll', {
-    duration: 3000,
-    origin: 'top',
-    distance: '100px'
-  });
+sr.reveal('.nav-2', {
+  delay: 350,
+  origin: 'bottom',
+  distance: '-20px'
+});
 
-  sr.reveal('.w-info', {
-    delay: 300,
-    origin: 'bottom',
-    distance: '100px'
-  });
+sr.reveal('.nav-3', {
+  delay: 400,
+  origin: 'bottom',
+  distance: '-20px'
+});
 
-  sr.reveal('.works', {
-    delay: 300,
-    origin: 'bottom',
-    distance: '100px'
-  });
+sr.reveal('.t1', {
+  delay: 100,
+  origin: 'top',
+  distance: '100%'
+});
 
-  sr.reveal('.next', {
-    delay: 300,
-    origin: 'bottom',
-    distance: '1000px'
-  });
+sr.reveal('.t-g', {
+  delay: 100,
+  origin: 'bottom',
+  distance: '100%'
+});
+
+sr.reveal('.t-d', {
+  delay: 200,
+  origin: 'bottom',
+  distance: '100%'
+});
+
+sr.reveal('.t-f', {
+  delay: 300,
+  origin: 'bottom',
+  distance: '100%'
+});
+
+sr.reveal('.t-g2', {
+  delay: 400,
+  origin: 'bottom',
+  distance: '100%'
+});
+
+sr.reveal('.t-p', {
+  delay: 500,
+  origin: 'bottom',
+  distance: '100%'
+});
+
+sr.reveal('.scroll', {
+  duration: 3000,
+  origin: 'top',
+  distance: '100px'
+});
+
+sr.reveal('.w-info', {
+  delay: 300,
+  origin: 'bottom',
+  distance: '100px'
+});
+
+sr.reveal('.works', {
+  delay: 300,
+  origin: 'bottom',
+  distance: '100px'
+});
+
+sr.reveal('.next', {
+  delay: 300,
+  origin: 'bottom',
+  distance: '1000px'
+});
 
 
-  sr.reveal('.b-container', {
-    duration: 2000,
-    origin: 'bottom',
-    distance: '100px'
-  });
+sr.reveal('.b-container', {
+  duration: 2000,
+  origin: 'bottom',
+  distance: '100px'
+});
 
-  sr.reveal('.touch a', {
-    duration: 2000,
-    origin: 'bottom',
-    distance: '100px'
-  });
+sr.reveal('.touch a', {
+  duration: 2000,
+  origin: 'bottom',
+  distance: '100px'
+});
 
 // Sticky Navegation Bar
 
@@ -157,8 +199,24 @@ allImages.forEach((value)=>{
 
 });
 
+// Menu 3D
+const menuItems = [...document.querySelectorAll('.item')];
 
+menuItems.forEach( item => {
+  let word = item.children[0].children[0].innerText.split('');
+  item.children[0].innerHTML = '';
+  
+  word.forEach((letter, idx) => {
+    item.children[0].innerHTML += `<span style="--index: ${idx};">${letter}</span>`
+  });
 
+  let cloneDiv = item.children[0].cloneNode(true);
+  cloneDiv.style.position = 'absolute';
+  cloneDiv.style.left = '0'
+  cloneDiv.style.top = '0'
+  item.appendChild(cloneDiv)
+
+})
 
 
 

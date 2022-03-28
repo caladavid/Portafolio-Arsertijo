@@ -4,6 +4,8 @@ const oculted = document.querySelector('.oculted');
 const sd = document.querySelector('.sd');
 const redZend = document.querySelector('.redZen');
 const presentZG = document.querySelector('.presentZG');
+const lectorManga = document.querySelector('.lectorManga');
+const CityManga = document.querySelector('.CityManga');
 
 const lightboxBg = document.createElement('div');
 lightboxBg.id = 'lightboxBg';
@@ -79,6 +81,66 @@ images.forEach(img => {
                 'works/RediseñoWeb/Zengaku Presentation/Presentation_04.png',
                 'works/RediseñoWeb/Zengaku Presentation/Presentation_05.png',
                 'works/RediseñoWeb/Zengaku Presentation/Presentation_06.png'
+
+]
+
+            arrayImg.forEach( image => {
+                const img = document.createElement('img');
+                img.src = image;
+                lightboxBg.appendChild(img);
+            })
+            
+        }
+
+        // Otro Imagen
+
+        if(img === lectorManga) {
+            arrayImg = [
+                'works/RediseñoWeb/LectorManga/mitad_02.png',
+                'works/RediseñoWeb/LectorManga/mitad_03.png',
+                'works/RediseñoWeb/LectorManga/mitad_05.png',
+                'works/RediseñoWeb/LectorManga/mitad_07.png',
+                'works/RediseñoWeb/LectorManga/mitad_08.png',
+                'works/RediseñoWeb/LectorManga/mitad_13.png',
+                'works/RediseñoWeb/LectorManga/mitad_15.png',
+]
+
+            arrayImg.forEach( image => {
+                const img = document.createElement('img');
+                img.src = image;
+                lightboxBg.appendChild(img);
+            })
+            
+        }
+
+        if(img === lectorManga) {
+            arrayImg = [
+                'works/RediseñoWeb/LectorManga/mitad_02.png',
+                'works/RediseñoWeb/LectorManga/mitad_03.png',
+                'works/RediseñoWeb/LectorManga/mitad_05.png',
+                'works/RediseñoWeb/LectorManga/mitad_07.png',
+                'works/RediseñoWeb/LectorManga/mitad_08.png',
+                'works/RediseñoWeb/LectorManga/mitad_13.png',
+                'works/RediseñoWeb/LectorManga/mitad_15.png',
+]
+
+            arrayImg.forEach( image => {
+                const img = document.createElement('img');
+                img.src = image;
+                lightboxBg.appendChild(img);
+            })
+            
+        }
+
+        if(img === CityManga) {
+            arrayImg = [
+                'works/RediseñoWeb/CityManga/citymangawebsite_02.png',
+                'works/RediseñoWeb/CityManga/citymangawebsite_03.png',
+                'works/RediseñoWeb/CityManga/citymangawebsite_04.png',
+                'works/RediseñoWeb/CityManga/citymangawebsite_05.png',
+                'works/RediseñoWeb/CityManga/citymangawebsite_06.png',
+                'works/RediseñoWeb/CityManga/citymangawebsite_07.png',
+                'works/RediseñoWeb/CityManga/citymangawebsite_08.png',
 
 ]
 

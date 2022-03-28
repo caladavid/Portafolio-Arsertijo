@@ -28,10 +28,12 @@
 body{
     font-size: 16px;
     background: var(--color-primary);
+    height: 100%;
 }
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 a, li{
@@ -60,11 +62,17 @@ img{
 #lightboxBg.active{
     display: grid;
     place-items: center;
+    height: 100%;
 }
 
 #lightboxBg.active img{
     width: 50%;
     pointer-events: none;
+}
+
+#lightboxBg.active iframe img {
+    display:block;
+    margin: 0 auto;
 }
 
 @media (max-width:768px) {

@@ -101,25 +101,8 @@ images.forEach(img => {
                 'works/RediseñoWeb/LectorManga/mitad_05.png',
                 'works/RediseñoWeb/LectorManga/mitad_07.png',
                 'works/RediseñoWeb/LectorManga/mitad_08.png',
-                'works/RediseñoWeb/LectorManga/mitad_13.png',
-                'works/RediseñoWeb/LectorManga/mitad_15.png',
-]
-
-            arrayImg.forEach( image => {
-                const img = document.createElement('img');
-                img.src = image;
-                lightboxBg.appendChild(img);
-            })
-            
-        }
-
-        if(img === lectorManga) {
-            arrayImg = [
-                'works/RediseñoWeb/LectorManga/mitad_02.png',
-                'works/RediseñoWeb/LectorManga/mitad_03.png',
-                'works/RediseñoWeb/LectorManga/mitad_05.png',
-                'works/RediseñoWeb/LectorManga/mitad_07.png',
-                'works/RediseñoWeb/LectorManga/mitad_08.png',
+                'works/RediseñoWeb/LectorManga/mitad_10.png',
+                'works/RediseñoWeb/LectorManga/mitad_12.png',
                 'works/RediseñoWeb/LectorManga/mitad_13.png',
                 'works/RediseñoWeb/LectorManga/mitad_15.png',
 ]

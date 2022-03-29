@@ -773,7 +773,7 @@ a, li{
 
 .my-works .works .w-text.wt p,
 .my-works .works .w-text.wt hr{
-    color: var(--color-primary);
+    color: var(--color-secondary);
 
 }
 

@@ -896,6 +896,7 @@ a, li{
 .about-me .b-container .a-text{
     text-align: center;
     margin-top: 2rem;
+    padding: 0 3rem;
 /*     margin-top: 8rem; */
     position: relative;
 }
@@ -932,7 +933,7 @@ a, li{
     }
 
     .about-me .b-container .a-text{
-        padding: 0 2em;
+        padding: 2em;
     }
 }
 
